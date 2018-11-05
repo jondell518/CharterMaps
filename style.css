@@ -1,0 +1,9 @@
+#my-map {
+  position: absolute;
+  width: 1080px;
+  height: 800px;
+  left: 50%;
+  top: 50%;
+  margin-left: -540px;
+  margin-top: -400px;
+}

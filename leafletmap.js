@@ -1,0 +1,66 @@
+window.onload = function () {
+  
+
+
+
+  var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+  maxZoom: 16
+  }); //This is the defaul basemap
+  
+
+  var basemap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  subdomains: 'abcd',
+  minZoom: 1,
+  maxZoom: 16,
+  ext: 'jpg'
+}); //This is an extra basemap that as of now is just for testing
+
+
+   var map = L.map('my-map').setView([49.653926, 8.567507], 6); //Creates the basemap and centers it on Worms for the time being
+   basemap.addTo(map); //Adds the basemap to the map
+ 
+
+  var createNewLayer = function(geoJSON)
+  {
+
+    //var geojson;
+    $.ajaxSetup({
+    async: false
+    }); //This wasnt working before because it made an ayshcronous ajax call, need to override that for it to update funcjson properly
+    $.getJSON(geoJSON, function(data) {
+
+    funcjson = L.geoJson(data, {
+      onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.Recpient + "<br> " + "Year: " + feature.properties.Year + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+      }// this creates the json layer and adds the popup boxes which show the place name, the year of the charter, and the place the charter was redacted.
+    });
+  });
+    return funcjson;
+  }; //This function takes an input for the url of the geoJSON file, and then creates a Leaflet JSON layer from it. It returns the Leaflet JSON layer.
+  
+
+    var allRecip = createNewLayer("RecipientsOnly.geojson"); //Set up the layer with all charter recipients
+    var FrankfurtOnly = createNewLayer("FrankfurtR.geojson"); //Set up the layer with only the Frankfurt recipients
+    var RegensburgOnly = createNewLayer("RegensburgR.geojson"); //Set up the layer with only the Regensburg recipients
+    allRecip.addTo(map); //Initialize the map with all the recipients shown
+   
+
+  //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
+  var baseLayers = {
+    "Base map": basemap,
+    "Base map 2": basemap2
+  }
+
+  var overlays = {
+    "All Recipients": allRecip,
+    "Frankfurt Only": FrankfurtOnly,
+    "Regensburg Only": RegensburgOnly
+  };
+  console.log("made it here");
+  L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
+  console.log("made it here");
+  //L.control.scale().addTo(map);
+};
+
