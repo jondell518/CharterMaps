@@ -54,13 +54,13 @@ window.onload = function () {
   }
 
   var overlays = {
-    "All Recipients": allRecip,
+  	"All Recipients": allRecip,
     "Frankfurt Only": FrankfurtOnly,
     "Regensburg Only": RegensburgOnly
   };
   console.log("made it here");
   L.control.layers(baseLayers, null, {collapsed: true}).addTo(map);
-  L.control.layers(overlays, null, {collapsed: false}).addTo(map);
+  L.control.layers(overlays, null, {collapsed: false}).addTo(map); //This makes it so the layers of GEOJSON are exclusive.
   console.log("made it here");
   //L.control.scale().addTo(map);
 };
