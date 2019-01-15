@@ -59,8 +59,8 @@ window.onload = function () {
     "Regensburg Only": RegensburgOnly
   };
   console.log("made it here");
-  L.control.layers(baseLayers).addTo(map);
-  L.control.layers(overlays).addTo(map);
+  L.control.layers(baseLayers, null, {collapsed: true}).addTo(map);
+  L.control.layers(overlays, null, {collapsed: false}).addTo(map);
   console.log("made it here");
   //L.control.scale().addTo(map);
 };
