@@ -1,5 +1,25 @@
 window.onload = function () {
-  
+  //Initialize the custom colored icons
+  var LGIcon = L.icon({
+  	iconUrl: 'LGICON.gif',
+  	iconSize: [35, 65],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+    /*shadowUrl: 'marker-shadow.png',
+    shadowSize: [35, 35],
+    shadowAnchor: [0, 0]*/
+	});
+
+
+  var LYIcon = L.icon({
+  	iconUrl: 'LYIconCleaned.gif',
+  	iconSize: [30, 63],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+    /*shadowUrl: 'marker-shadow.png',
+    shadowSize: [35, 35],
+    shadowAnchor: [0, 0]*/
+	});
 
 
 
@@ -21,9 +41,9 @@ window.onload = function () {
 
    var map = L.map('my-map').setView([49.653926, 8.567507], 6); //Creates the basemap and centers it on Worms for the time being
    basemap.addTo(map); //Adds the basemap to the map
- 
+   //L.marker([49.653926, 8.567507], {icon: LGIcon}).addTo(map);
 
-  var createNewLayer = function(geoJSON)
+  var createNewLayer = function(geoJSON, icon)
   {
 
     //var geojson;
@@ -34,6 +54,7 @@ window.onload = function () {
 
     funcjson = L.geoJson(data, {
       onEachFeature: function (feature, layer) {
+      	layer.setIcon(icon);
         layer.bindPopup(feature.properties.Recpient + "<br> " + "Year: " + feature.properties.Year + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
       }// this creates the json layer and adds the popup boxes which show the place name, the year of the charter, and the place the charter was redacted.
     });
@@ -42,9 +63,9 @@ window.onload = function () {
   }; //This function takes an input for the url of the geoJSON file, and then creates a Leaflet JSON layer from it. It then returns the Leaflet JSON layer.
   
 
-    var allRecip = createNewLayer("RecipientsOnly.geojson"); //Set up the layer with all charter recipients
-    var FrankfurtOnly = createNewLayer("FrankfurtR.geojson"); //Set up the layer with only the Frankfurt recipients
-    var RegensburgOnly = createNewLayer("RegensburgR.geojson"); //Set up the layer with only the Regensburg recipients
+    var allRecip = createNewLayer("RecipientsOnly.geojson",LGIcon); //Set up the layer with all charter recipients
+    var FrankfurtOnly = createNewLayer("FrankfurtR.geojson", LYIcon); //Set up the layer with only the Frankfurt recipients
+    var RegensburgOnly = createNewLayer("RegensburgR.geojson", LYIcon); //Set up the layer with only the Regensburg recipients
     //allRecip.addTo(map); //Initialize the map with all the recipients shown
    
 
