@@ -46,8 +46,18 @@ window.onload = function () {
   var createNewLayer = function(geoJSON, icon)
   {
 
+    var leafletLayer = L.geoJson(geoJSON, {
+      onEachFeature: function (feature, layer){
+        layer.setIcon(icon);
+        layer.bindPopup(feature.properties.Recpient + "<br>" + "Year: " + feature.properties.Year + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+      }
+    })
+
+    return leafletLayer;
+
+
     //var geojson;
-    $.ajaxSetup({
+    /*$.ajaxSetup({
     async: false
     }); //This wasnt working before because it made an ayshcronous ajax call, need to override that for it to update funcjson properly
     $.getJSON(geoJSON, function(data) {
@@ -59,15 +69,15 @@ window.onload = function () {
       }// this creates the json layer and adds the popup boxes which show the place name, the year of the charter, and the place the charter was redacted.
     });
   });
-    return funcjson;
+    return funcjson;*/
   }; //This function takes an input for the url of the geoJSON file, and then creates a Leaflet JSON layer from it. It then returns the Leaflet JSON layer.
   
 
-    var allRecip = createNewLayer("RecipientsOnly.geojson",LGIcon); //Set up the layer with all charter recipients
-    var FrankfurtOnly = createNewLayer("FrankfurtR.geojson", LYIcon); //Set up the layer with only the Frankfurt recipients
-    var RegensburgOnly = createNewLayer("RegensburgR.geojson", LYIcon); //Set up the layer with only the Regensburg recipients
-    //allRecip.addTo(map); //Initialize the map with all the recipients shown
-   
+    var allRecip = createNewLayer(frankfurtGeoJson,LGIcon); //Set up the layer with all charter recipients
+    //var FrankfurtOnly = createNewLayer("FrankfurtR.geojson", LYIcon); //Set up the layer with only the Frankfurt recipients
+    //var RegensburgOnly = createNewLayer("RegensburgR.geojson", LYIcon); //Set up the layer with only the Regensburg recipients
+    
+    
 
 
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
@@ -78,15 +88,13 @@ window.onload = function () {
 
   var overlays = {
   	"Louis The German (827-876)": allRecip,
-    "Louis the Younger (876-882)": FrankfurtOnly,
+    /*"Louis the Younger (876-882)": FrankfurtOnly,
     "Carloman (876-880)": RegensburgOnly,
     "Charles the Fat (876-887)": allRecip,
-    "Arnulf of Carinthia (887-899)": allRecip
+    "Arnulf of Carinthia (887-899)": allRecip*/
   };
   console.log("made it here");
   L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
- // L.control.layers(overlays, null, {collapsed: false}).addTo(map); //This makes it so the layers of GEOJSON are exclusive.
   console.log("made it here");
-  //L.control.scale().addTo(map);
 };
 
