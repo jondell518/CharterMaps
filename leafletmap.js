@@ -43,6 +43,9 @@ window.onload = function () {
    basemap.addTo(map); //Adds the basemap to the map
    //L.marker([49.653926, 8.567507], {icon: LGIcon}).addTo(map);
 
+
+  /*This function takes two inputs: the geoJSON data and the icon you want to use for the layer. It then sets the icon and adds a popup
+  on each point with the name of the location (recipient), the year of the grant, and the place it was redacted. It then returns the layer */
   var createNewLayer = function(geoJSON, icon)
   {
 
