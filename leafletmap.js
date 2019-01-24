@@ -80,8 +80,17 @@ window.onload = function () {
     //var FrankfurtOnly = createNewLayer("FrankfurtR.geojson", LYIcon); //Set up the layer with only the Frankfurt recipients
     //var RegensburgOnly = createNewLayer("RegensburgR.geojson", LYIcon); //Set up the layer with only the Regensburg recipients
     
-    
+    var baseTree = {
+      label: 'Base Layers',
+      children: [
+          {label: 'Base Layer 1', layer: basemap},
+          {label: 'Base Layer 2', layer: basemap2},
 
+
+      ]
+    }
+
+    L.control.layers.tree(baseTree, null).addTo(map);
 
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
   var baseLayers = {
@@ -97,7 +106,7 @@ window.onload = function () {
     "Arnulf of Carinthia (887-899)": allRecip*/
   };
   console.log("made it here");
-  L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
+  //L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
   console.log("made it here");
 };
 
