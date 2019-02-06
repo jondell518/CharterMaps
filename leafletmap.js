@@ -115,10 +115,10 @@ window.onload = function () {
 
   var overlays = {
   	"Louis The German (827-876)": allRecip,
-    /*"Louis the Younger (876-882)": FrankfurtOnly,
-    "Carloman (876-880)": RegensburgOnly,
+    "Louis the Younger (876-882)": allRecip,
+    "Carloman (876-880)": allRecip,
     "Charles the Fat (876-887)": allRecip,
-    "Arnulf of Carinthia (887-899)": allRecip*/
+    "Arnulf of Carinthia (887-899)": allRecip
   };
   console.log("made it here");
   L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
