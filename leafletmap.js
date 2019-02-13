@@ -62,6 +62,7 @@ AIcon = initIcons('marker-icon-green.png');
     var ARecipients = createNewLayer(AJSON,AIcon);
     var LGRecipients = createNewLayer(LGJSON, LYIcon); 
    LGRecipients.addTo(map);
+   //ARecipients.addTo(map);
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
   var baseLayers = {
     "Base map": basemap,
@@ -70,13 +71,14 @@ AIcon = initIcons('marker-icon-green.png');
 
   var overlays = {
 
-  	"Louis The German (827-876)": LGRecipients,
+  	"Louis the German (827-876)": LGRecipients,
     "Louis the Younger (876-882)": ARecipients,
     "Carloman (876-880)": ARecipients,
     "Charles the Fat (876-887)": ARecipients,
     "Arnulf of Carinthia (887-899)": ARecipients,
 
   };
+
   console.log("made it here");
   L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
   console.log("made it here");
