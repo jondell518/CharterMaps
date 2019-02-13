@@ -1,27 +1,27 @@
 window.onload = function () {
-  //Initialize the custom colored icons
-  var LGIcon = L.icon({
-  	iconUrl: 'LGICON.gif',
-  	iconSize: [35, 65],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76],
-    /*shadowUrl: 'marker-shadow.png',
-    shadowSize: [35, 35],
-    shadowAnchor: [0, 0]*/
+
+  var initIcons = function(imageFile){
+  	//Icons taken from pointhi: can be found at https://github.com/pointhi/leaflet-color-markers
+
+ 	var icon = L.icon({
+  		iconUrl: imageFile,
+  		iconSize: [25, 41],
+    	iconAnchor: [12, 41],
+   		popupAnchor: [0, -34],
+    	shadowUrl: 'marker-shadow.png',
+    	shadowSize: [41, 41],
 	});
 
-
-  var LYIcon = L.icon({
-  	iconUrl: 'LYIconCleaned.gif',
-  	iconSize: [30, 63],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76],
-    /*shadowUrl: 'marker-shadow.png',
-    shadowSize: [35, 35],
-    shadowAnchor: [0, 0]*/
-	});
-
-
+	return icon;
+  }
+  
+//Initialize the custom colored icons
+var LGIcon, LYIcon, CaIcon, CFIcon, AIcon;
+LGIcon= initIcons('marker-icon-red.png');
+LYIcon = initIcons('marker-icon-blue.png');
+CaIcon = initIcons('marker-icon-orange.png');
+CFIcon = initIcons('marker-icon-violet.png');
+AIcon = initIcons('marker-icon-green.png');
 
   var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
@@ -36,12 +36,11 @@ window.onload = function () {
   minZoom: 5,
   maxZoom: 16,
   ext: 'jpg'
-}); //This is an extra basemap that as of now is just for testing
+  }); //This is an extra basemap that as of now is just for testing
 
 
    var map = L.map('my-map').setView([49.653926, 8.567507], 6); //Creates the basemap and centers it on Worms for the time being
    basemap.addTo(map); //Adds the basemap to the map
-   //L.marker([49.653926, 8.567507], {icon: LGIcon}).addTo(map);
 
 
   /*This function takes two inputs: the geoJSON data and the icon you want to use for the layer. It then sets the icon and adds a popup
@@ -52,61 +51,17 @@ window.onload = function () {
     var leafletLayer = L.geoJson(geoJSON, {
       onEachFeature: function (feature, layer){
         layer.setIcon(icon);
-        layer.bindPopup(feature.properties.Recpient + "<br>" + "Year: " + feature.properties.Year + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+        layer.bindPopup(feature.properties.Recipient + "<br>" + "Year: " + feature.properties.Year + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
       }
     })
 
     return leafletLayer;
-
-
-    //var geojson;
-    /*$.ajaxSetup({
-    async: false
-    }); //This wasnt working before because it made an ayshcronous ajax call, need to override that for it to update funcjson properly
-    $.getJSON(geoJSON, function(data) {
-
-    funcjson = L.geoJson(data, {
-      onEachFeature: function (feature, layer) {
-      	layer.setIcon(icon);
-        layer.bindPopup(feature.properties.Recpient + "<br> " + "Year: " + feature.properties.Year + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
-      }// this creates the json layer and adds the popup boxes which show the place name, the year of the charter, and the place the charter was redacted.
-    });
-  });
-    return funcjson;*/
   }; //This function takes an input for the url of the geoJSON file, and then creates a Leaflet JSON layer from it. It then returns the Leaflet JSON layer.
   
 
-    var allRecip = createNewLayer(allRecipients,LGIcon); //Set up the layer with all charter recipients
-    //var FrankfurtOnly = createNewLayer("FrankfurtR.geojson", LYIcon); //Set up the layer with only the Frankfurt recipients
-    //var RegensburgOnly = createNewLayer("RegensburgR.geojson", LYIcon); //Set up the layer with only the Regensburg recipients
-    
-   /* var baseTree = [
-    {
-    	label: 'BaseLayers',
-    	children: [
-    	{label: 'BaseMap1', layer: basemap},
-    	{label: 'BaseMap2', layer: basemap2},
-    	]
-    },
-    ];
-
-    var overlayTree = [
-    {
-    	label: 'Overlay Layer',
-    	children: [
-    	{label: 'Arnulf', layer: allRecip},
-    	{label: 'Arnulf', layer: allRecip},
-
-    	]
-
-
-    },
-
-    ]
-
-
-    L.control.layers.tree(baseTree, overlayTree, {collapsed: false}).addTo(map);*/
-
+    var ARecipients = createNewLayer(AJSON,AIcon);
+    var LGRecipients = createNewLayer(LGJSON, LYIcon); 
+   LGRecipients.addTo(map);
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
   var baseLayers = {
     "Base map": basemap,
@@ -114,11 +69,11 @@ window.onload = function () {
   }
 
   var overlays = {
-  	"Louis The German (827-876)": allRecip,
-    /*"Louis the Younger (876-882)": FrankfurtOnly,
-    "Carloman (876-880)": RegensburgOnly,
-    "Charles the Fat (876-887)": allRecip,
-    "Arnulf of Carinthia (887-899)": allRecip*/
+  	"Louis The German (827-876)": LGRecipients,
+    "Louis the Younger (876-882)": ARecipients,
+    "Carloman (876-880)": ARecipients,
+    "Charles the Fat (876-887)": ARecipients,
+    "Arnulf of Carinthia (887-899)": ARecipients,
   };
   console.log("made it here");
   L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
