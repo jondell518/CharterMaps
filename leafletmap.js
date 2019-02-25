@@ -83,7 +83,7 @@ AIcon = initIcons('marker-icon-green.png');
   //L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
   console.log("made it here");
 
-
+  //This takes the layers and groups them so they are clustered.
   var OMS = L.markerClusterGroup();
   OMS.addLayers(LGRecipients);
   OMS.addLayers(ARecipients);
