@@ -58,36 +58,64 @@ AIcon = initIcons('marker-icon-green.png');
     return leafletLayer;
   }; //This function takes an input for the url of the geoJSON file, and then creates a Leaflet JSON layer from it. It then returns the Leaflet JSON layer.
   
-
+  //These take the GeoJSON files and turns them into Leaflet Layers we can add to the map.
     var ARecipients = createNewLayer(AJSON,AIcon);
-    var LGRecipients = createNewLayer(LGJSON, LYIcon); 
-   //LGRecipients.addTo(map);
-   //ARecipients.addTo(map);
+    var LGRecipients = createNewLayer(LGJSON, LGIcon); 
+    
+    //These need data and will be uncommented then
+    /*var CaRecipients = createNewLayer(CaJSON, CaIcon); 
+    var CFRecipients= createNewLayer(CFJSON, CFIcon); 
+  	var LYRecipients= createNewLayer(LYJSON, LYIcon);*/
+
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
-  var baseLayers = {
+  //This uses two plugins=: Leaflet.MarkerCluster and Leaflet.FeatureGroup.Subgroup
+
+  //The parent group controls the marker cluster group, which the default options have been set to now show the boundaries of a cluster group, and turned down the max cluster radius to a smaller amount
+  //since this is really for markers on the same exact spot or very close together.
+  	var parentGroup = L.markerClusterGroup({
+		showCoverageOnHover: false,
+		zoomToBoundsOnClick: true,
+		maxClusterRadius: 15,
+	});
+
+	//These are the subgroups which will have the layers added to them later.
+	var LGGroup = L.featureGroup.subGroup(parentGroup);
+	var ArnulfGroup = L.featureGroup.subGroup(parentGroup);
+	
+	/*These will be uncommented when I have the data
+	var CaGroup = L.featureGroup.subGroup(parentGroup);
+	var CFGroup = L.featureGroup.subGroup(parentGroup);
+	var LYGroup = L.featureGroup.subGroup(parentGroup);*/
+	
+	//Add the layers to the subgroups
+	LGRecipients.addTo(LGGroup);
+	ARecipients.addTo(ArnulfGroup);
+
+	//Add the parent group and then initialize Louis the German as the first subgroup.
+	parentGroup.addTo(map);
+	LGGroup.addTo(map);
+	
+
+	//Create the variables to pass to the layer control which give the layer names
+	var baseLayers = {
     "Base map": basemap,
     "Base map 2": basemap2
-  }
+  	}
 
-  var overlays = {
+  	var overlays = {
 
-  	"Louis the German (827-876)": LGRecipients,
-    "Louis the Younger (876-882)": ARecipients,
-    "Carloman (876-880)": ARecipients,
-    "Charles the Fat (876-887)": ARecipients,
-    "Arnulf of Carinthia (887-899)": ARecipients,
+  	"Louis the German (827-876)": LGGroup,
+    /*"Louis the Younger (876-882)": LYGroup,
+    "Carloman (876-880)": CaGroup,
+    "Charles the Fat (876-887)": CFGroup,*/
+    "Arnulf of Carinthia (887-899)": ArnulfGroup,
 
-  };
+  	};
 
-  console.log("made it here");
-  //L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
-  console.log("made it here");
-
-  //This takes the layers and groups them so they are clustered.
-  var OMS = L.markerClusterGroup();
-  OMS.addLayers(LGRecipients);
-  OMS.addLayers(ARecipients);
-  map.addLayer(OMS);
+  	//Add the actual layer control to the map
+	console.log("made it here");
+  	L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
+	console.log("made it here");
 
 };
 
