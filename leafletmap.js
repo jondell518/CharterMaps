@@ -23,7 +23,7 @@ CaIcon = initIcons('marker-icon-orange.png');
 CFIcon = initIcons('marker-icon-violet.png');
 AIcon = initIcons('marker-icon-green.png');
 
-  var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+  /*var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
   minZoom: 5,
   maxZoom: 10,
@@ -56,7 +56,7 @@ var basemap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
 	maxZoom: 19
-});
+});*/
 
 var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -64,8 +64,9 @@ var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyage
 	maxZoom: 19
 });
 
+
    var map = L.map('my-map').setView([49.653926, 8.567507], 6); //Creates the basemap and centers it on Worms for the time being
-   basemap.addTo(map); //Adds the basemap to the map
+   basemap6.addTo(map); //Adds the basemap to the map
 
 
   /*This function takes two inputs: the geoJSON data and the icon you want to use for the layer. It then sets the icon and adds a popup
@@ -123,11 +124,11 @@ var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyage
 
 	//Create the variables to pass to the layer control which give the layer names
 	var baseLayers = {
-    "Base map": basemap,
+    /*"Base map": basemap,
     "Base map 2": basemap2,
     "Base map 3": basemap3,
     "Base map 4": basemap4,
-    "Base map 5": basemap5,
+    "Base map 5": basemap5,*/
     "Base map 6": basemap6,
   	}
 
@@ -143,7 +144,7 @@ var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyage
 
   	//Add the actual layer control to the map
 	console.log("made it here");
-  	L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
+  	L.control.layers(baseLayers, overlays, {collapsed: false, autoZIndex: false, hideSingleBase: true,}).addTo(map);
 	console.log("made it here");
 
 };
