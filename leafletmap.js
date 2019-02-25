@@ -97,10 +97,10 @@ var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyage
   //This uses two plugins=: Leaflet.MarkerCluster and Leaflet.FeatureGroup.Subgroup
 
   //The parent group controls the marker cluster group, which the default options have been set to now show the boundaries of a cluster group, and turned down the max cluster radius to a smaller amount
-  //since this is really for markers on the same exact spot or very close together.
+  //since this is really for markers on the same exact spot or very close together. I turned off zoom to bounds on click because it was not very useful.
   	var parentGroup = L.markerClusterGroup({
 		showCoverageOnHover: false,
-		zoomToBoundsOnClick: true,
+		zoomToBoundsOnClick: false,
 		maxClusterRadius: 15,
 	});
 
