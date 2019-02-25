@@ -61,7 +61,7 @@ AIcon = initIcons('marker-icon-green.png');
 
     var ARecipients = createNewLayer(AJSON,AIcon);
     var LGRecipients = createNewLayer(LGJSON, LYIcon); 
-   LGRecipients.addTo(map);
+   //LGRecipients.addTo(map);
    //ARecipients.addTo(map);
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
   var baseLayers = {
@@ -80,7 +80,14 @@ AIcon = initIcons('marker-icon-green.png');
   };
 
   console.log("made it here");
-  L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
+  //L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(map);
   console.log("made it here");
+
+
+  var OMS = L.markerClusterGroup();
+  OMS.addLayers(LGRecipients);
+  OMS.addLayers(ARecipients);
+  map.addLayer(OMS);
+
 };
 
