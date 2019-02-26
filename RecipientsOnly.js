@@ -1205,3 +1205,7 @@ var LGJSON = {
     }
   ]
 };
+
+var CaJSON;
+var LYJSON;
+var CFJSON;
