@@ -61,7 +61,8 @@ var basemap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}
 var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
-	maxZoom: 19
+	minZoom: 5,
+  	maxZoom: 8,
 });
 
 
@@ -97,11 +98,11 @@ var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyage
   //This uses two plugins=: Leaflet.MarkerCluster and Leaflet.FeatureGroup.Subgroup
 
   //The parent group controls the marker cluster group, which the default options have been set to now show the boundaries of a cluster group, and turned down the max cluster radius to a smaller amount
-  //since this is really for markers on the same exact spot or very close together. I turned off zoom to bounds on click because it was not very useful.
+  //since this is really for markers on the same exact spot or very close together. 
   	var parentGroup = L.markerClusterGroup({
 		showCoverageOnHover: false,
-		zoomToBoundsOnClick: false,
-		maxClusterRadius: 15,
+		zoomToBoundsOnClick: true,
+		maxClusterRadius: 5,
 	});
 
 	//These are the subgroups which will have the layers added to them later.
