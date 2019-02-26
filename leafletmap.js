@@ -8,7 +8,7 @@ window.onload = function () {
   		iconSize: [25, 41],
     	iconAnchor: [12, 41],
    		popupAnchor: [0, -34],
-    	shadowUrl: '../icons/marker-shadow.png',
+    	shadowUrl: 'icons/marker-shadow.png',
     	shadowSize: [41, 41],
 	});
 
@@ -17,11 +17,11 @@ window.onload = function () {
   
 //Initialize the custom colored icons
 var LGIcon, LYIcon, CaIcon, CFIcon, AIcon;
-LGIcon= initIcons('../icons/marker-icon-red.png');
-LYIcon = initIcons('../icons/marker-icon-blue.png');
-CaIcon = initIcons('../icons/marker-icon-orange.png');
-CFIcon = initIcons('../icons/marker-icon-violet.png');
-AIcon = initIcons('../icons/marker-icon-green.png');
+LGIcon= initIcons('icons/marker-icon-red.png');
+LYIcon = initIcons('icons/marker-icon-blue.png');
+CaIcon = initIcons('icons/marker-icon-orange.png');
+CFIcon = initIcons('icons/marker-icon-violet.png');
+AIcon = initIcons('icons/marker-icon-green.png');
 
   /*var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
