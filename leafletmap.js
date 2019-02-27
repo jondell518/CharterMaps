@@ -1,7 +1,7 @@
 window.onload = function () {
 
   var initIcons = function(imageFile){
-  	//Icons taken from pointhi: can be found at https://github.com/pointhi/leaflet-color-markers
+  //Icons taken from pointhi: can be found at https://github.com/pointhi/leaflet-color-markers
 
  	var icon = L.icon({
   		iconUrl: imageFile,
@@ -23,11 +23,13 @@ CaIcon = initIcons('icons/marker-icon-orange.png');
 CFIcon = initIcons('icons/marker-icon-violet.png');
 AIcon = initIcons('icons/marker-icon-green.png');
 
+
+//Different Basemaps for testing
   /*var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
   minZoom: 5,
   maxZoom: 10,
-  }); //This is the defaul basemap
+  }); //This is the default basemap
   
 
   var basemap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
@@ -62,40 +64,49 @@ var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyage
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
 	minZoom: 5,
-  	maxZoom: 8,
+  maxZoom: 8,
 });
 
 
-   var map = L.map('my-map').setView([49.653926, 8.567507], 6); //Creates the basemap and centers it on Worms for the time being
-   basemap6.addTo(map); //Adds the basemap to the map
+var map = L.map('my-map').setView([49.653926, 8.567507], 6); //Creates the basemap and centers it on Worms for the time being
+basemap6.addTo(map); //Adds the basemap to the map
 
 
-  /*This function takes two inputs: the geoJSON data and the icon you want to use for the layer. It then sets the icon and adds a popup
-  on each point with the name of the location (recipient), the year of the grant, and the place it was redacted. It then returns the layer */
-  var createNewLayer = function(geoJSON, icon)
+  /*This function takes three inputs: the GeoJSON data, the icon you want to use for the layer, and the name of the king granting 
+  the charter. It then sets the icon and adds a popup on each point with the name of king issuing the charter, 
+  the location (recipient), the year of the grant, and the place it was redacted. It then returns the layer. */
+  var createNewLayer = function(GeoJSON, icon, king)
   {
 
-    var leafletLayer = L.geoJson(geoJSON, {
+    var leafletLayer = L.geoJson(GeoJSON, {
       onEachFeature: function (feature, layer){
         layer.setIcon(icon);
-        layer.bindPopup(feature.properties.Recipient + "<br>" + "Year: " + feature.properties.Year + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+        layer.bindPopup("King: " + king 
+          + "<br>" + "Recipient: " + feature.properties.Recipient 
+          + "<br>" + "Year: " + feature.properties.Year 
+          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+        //Might add URL links for each charter: "<br>" + '<a href=' + feature.properties.url + '>MGH</a>').openPopup();
+
+        //This just adds a tooltip for mousing over an icon, which gives quick access to the name of the recipient.
+        layer.bindTooltip(feature.properties.Recipient).openTooltip();
       }
     })
 
     return leafletLayer;
-  }; //This function takes an input for the url of the geoJSON file, and then creates a Leaflet JSON layer from it. It then returns the Leaflet JSON layer.
-  
-  //These take the GeoJSON files and turns them into Leaflet Layers we can add to the map.
-    var ARecipients = createNewLayer(AJSON,AIcon);
-    var LGRecipients = createNewLayer(LGJSON, LGIcon); 
+  }; 
+
+  //These take the GeoJSON files (which have been set as variables in RecipientsOnly.js) and turns them into Leaflet Layers 
+  //that we can add to the map.
+    var ARecipients = createNewLayer(AJSON,AIcon, "Arnulf");
+    var LGRecipients = createNewLayer(LGJSON, LGIcon, "Louis the German"); 
     
     //These need data and will be uncommented then
-    /*var CaRecipients = createNewLayer(CaJSON, CaIcon); 
-    var CFRecipients= createNewLayer(CFJSON, CFIcon); 
-  	var LYRecipients= createNewLayer(LYJSON, LYIcon);*/
+    /*var CaRecipients = createNewLayer(CaJSON, CaIcon, "Carloman"); 
+    var CFRecipients= createNewLayer(CFJSON, CFIcon, "Charles the Fat"); 
+  	var LYRecipients= createNewLayer(LYJSON, LYIcon, "Louis the Younger");*/
 
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
-  //This uses two plugins=: Leaflet.MarkerCluster and Leaflet.FeatureGroup.Subgroup
+  //This uses two plugins: Leaflet.MarkerCluster and Leaflet.FeatureGroup.Subgroup
 
   //The parent group controls the marker cluster group, which the default options have been set to now show the boundaries of a cluster group, and turned down the max cluster radius to a smaller amount
   //since this is really for markers on the same exact spot or very close together. 
@@ -130,7 +141,7 @@ var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyage
     "Base map 3": basemap3,
     "Base map 4": basemap4,
     "Base map 5": basemap5,*/
-    "Base map 6": basemap6,
+    "Default Basemap": basemap6,
   	}
 
   	var overlays = {
@@ -143,10 +154,8 @@ var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyage
 
   	};
 
-  	//Add the actual layer control to the map
-	console.log("made it here");
-  	L.control.layers(baseLayers, overlays, {collapsed: false, autoZIndex: false, hideSingleBase: true,}).addTo(map);
-	console.log("made it here");
-
+  //Add the actual layer control to the map
+  L.control.layers(baseLayers, overlays, {collapsed: false, autoZIndex: false, hideSingleBase: true,}).addTo(map);
+	
 };
 
