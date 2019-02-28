@@ -1,5 +1,7 @@
 window.onload = function () {
-
+  //Default variables for controlling the map zoom
+  var mapMinZoom = 4;
+  var mapMaxZoom = 8;
   var initIcons = function(imageFile){
   //Icons taken from pointhi: can be found at https://github.com/pointhi/leaflet-color-markers
 
@@ -25,46 +27,48 @@ AIcon = initIcons('icons/marker-icon-green.png');
 
 
 //Different Basemaps for testing
-  /*var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+  var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-  minZoom: 5,
-  maxZoom: 10,
+  minZoom: mapMinZoom,
+  maxZoom: mapMaxZoom,
   }); //This is the default basemap
   
 
   var basemap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   subdomains: 'abcd',
-  minZoom: 5,
-  maxZoom: 16,
+  minZoom: mapMinZoom,
+  maxZoom: mapMaxZoom,
   ext: 'jpg'
-  }); //This is an extra basemap that as of now is just for testing
+  }); 
 
   var basemap3 = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
-	maxZoom: 19
+	minZoom: mapMinZoom,
+  maxZoom: mapMaxZoom,
 });
 
   var basemap4 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}{r}.{ext}', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	subdomains: 'abcd',
-	minZoom: 0,
-	maxZoom: 18,
+	minZoom: mapMinZoom,
+	maxZoom: mapMaxZoom,
 	ext: 'png'
 });
 
 var basemap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
-	maxZoom: 19
-});*/
+	minZoom: mapMinZoom,
+  maxZoom: mapMaxZoom,
+});
 
 var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
-	minZoom: 3,
-  maxZoom: 8,
+	minZoom: mapMinZoom,
+  maxZoom: mapMaxZoom,
 });
 
 
@@ -81,10 +85,32 @@ basemap6.addTo(map); //Adds the basemap to the map
     var leafletLayer = L.geoJson(GeoJSON, {
       onEachFeature: function (feature, layer){
         layer.setIcon(icon);
-        layer.bindPopup("King: " + king 
+
+        if(feature.properties.PlaceRedacted == "NA" && feature.properties.MGH != null)
+        {
+          layer.bindPopup("King: " + king 
+          + "<br>" + "Recipient: " + feature.properties.Recipient 
+          + "<br>" + "Year: " + feature.properties.Year 
+          + "<br>" + "MGH #: " + feature.properties.MGH 
+          + "<br>" + "Place Redacted: Not Specified").openPopup();
+        }
+        else if(feature.properties.MGH != null)
+        {
+           layer.bindPopup("King: " + king 
+          + "<br>" + "Recipient: " + feature.properties.Recipient 
+          + "<br>" + "Year: " + feature.properties.Year 
+          + "<br>" + "MGH #: " + feature.properties.MGH 
+          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+        }
+        else
+        {
+           layer.bindPopup("King: " + king 
           + "<br>" + "Recipient: " + feature.properties.Recipient 
           + "<br>" + "Year: " + feature.properties.Year 
           + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+        
+        }
+       
         //Might add URL links for each charter: "<br>" + '<a href=' + feature.properties.url + '>MGH</a>').openPopup();
 
         //This just adds a tooltip for mousing over an icon, which gives quick access to the name of the recipient.
@@ -138,11 +164,11 @@ basemap6.addTo(map); //Adds the basemap to the map
 
 	//Create the variables to pass to the layer control which give the layer names
 	var baseLayers = {
-    /*"Base map": basemap,
+    "Base map": basemap,
     "Base map 2": basemap2,
     "Base map 3": basemap3,
     "Base map 4": basemap4,
-    "Base map 5": basemap5,*/
+    "Base map 5": basemap5,
     "Default Basemap": basemap6,
   	}
 

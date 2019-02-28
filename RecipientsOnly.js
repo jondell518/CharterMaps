@@ -1214,7 +1214,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 74,
+        "MGH": 74,
         "Year": 883,
         "PlaceRedacted": "Regensburg",
         "Recipient": "Altaich"
@@ -1230,7 +1230,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 24,
+        "MGH": 24,
         "Year": 880,
         "PlaceRedacted": "NA",
         "Recipient": "Andlau"
@@ -1246,7 +1246,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 95,
+        "MGH": 95,
         "Year": "886?",
         "PlaceRedacted": "Kolmar",
         "Recipient": "Andlau"
@@ -1262,7 +1262,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 12,
+        "MGH": 12,
         "Year": 879,
         "PlaceRedacted": "NA",
         "Recipient": "Arezzo"
@@ -1278,8 +1278,8 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 31,
-        "Year": "881)",
+        "MGH": 31,
+        "Year": "881?",
         "PlaceRedacted": "Siena",
         "Recipient": "Arezzo"
       },
@@ -1294,7 +1294,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 50,
+        "MGH": 50,
         "Year": 882,
         "PlaceRedacted": "Ravenna",
         "Recipient": "Arezzo"
@@ -1310,7 +1310,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 111,
+        "MGH": 111,
         "Year": 885,
         "PlaceRedacted": "Murgula",
         "Recipient": "Asti"
@@ -1326,7 +1326,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 48,
+        "MGH": 48,
         "Year": 882,
         "PlaceRedacted": "NA",
         "Recipient": "Belluno"
@@ -1342,7 +1342,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 52,
+        "MGH": 52,
         "Year": 882,
         "PlaceRedacted": "Ravenna",
         "Recipient": "Bergamo"
@@ -1358,7 +1358,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 87,
+        "MGH": 87,
         "Year": 883,
         "PlaceRedacted": "Murgula",
         "Recipient": "Bergamo"
@@ -1374,7 +1374,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 88,
+        "MGH": 88,
         "Year": 883,
         "PlaceRedacted": "Murgula",
         "Recipient": "Bergamo"
@@ -1390,7 +1390,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 89,
+        "MGH": 89,
         "Year": 883,
         "PlaceRedacted": "Murgula",
         "Recipient": "Bergamo"
@@ -1406,7 +1406,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 34,
+        "MGH": 34,
         "Year": 881,
         "PlaceRedacted": "Pavia",
         "Recipient": "Brugnato"
@@ -1422,7 +1422,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 53,
+        "MGH": 53,
         "Year": 882,
         "PlaceRedacted": "Ravenna",
         "Recipient": "Brugnato"
@@ -1438,7 +1438,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 82,
+        "MGH": 82,
         "Year": 883,
         "PlaceRedacted": "Nonantola",
         "Recipient": "Casauria"
@@ -1454,7 +1454,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 119,
+        "MGH": 119,
         "Year": 885,
         "PlaceRedacted": "Gondreville",
         "Recipient": "Chalon-sur-Saône"
@@ -1470,7 +1470,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 150,
+        "MGH": 150,
         "Year": 886,
         "PlaceRedacted": "Iovilla nova",
         "Recipient": "Châlons-sur-Marne"
@@ -1486,7 +1486,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 30,
+        "MGH": 30,
         "Year": 881,
         "PlaceRedacted": "Reggio",
         "Recipient": "Chur"
@@ -1502,7 +1502,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 62,
+        "MGH": 62,
         "Year": 882,
         "PlaceRedacted": "Worms",
         "Recipient": "Corvey"
@@ -1518,7 +1518,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 51,
+        "MGH": 51,
         "Year": 882,
         "PlaceRedacted": "Ravenna",
         "Recipient": "Cremona"
@@ -1534,7 +1534,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 90,
+        "MGH": 90,
         "Year": 883,
         "PlaceRedacted": "Murgela",
         "Recipient": "Cremona"
@@ -1550,7 +1550,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 138,
+        "MGH": 138,
         "Year": 886,
         "PlaceRedacted": "Attigny",
         "Recipient": "Cusset"
@@ -1566,7 +1566,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 83,
+        "MGH": 83,
         "Year": 883,
         "PlaceRedacted": "Nonantola",
         "Recipient": "Farfa"
@@ -1582,7 +1582,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 65,
+        "MGH": 65,
         "Year": 882,
         "PlaceRedacted": "Frankfurt",
         "Recipient": "Frankfurt"
@@ -1598,7 +1598,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 69,
+        "MGH": 69,
         "Year": "NA",
         "PlaceRedacted": "NA",
         "Recipient": "Fulda"
@@ -1614,7 +1614,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 97,
+        "MGH": 97,
         "Year": 884,
         "PlaceRedacted": "NA",
         "Recipient": "Fulda"
@@ -1630,7 +1630,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 132,
+        "MGH": 132,
         "Year": 885,
         "PlaceRedacted": "Frankfurt",
         "Recipient": "Fulda"
@@ -1646,7 +1646,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 148,
+        "MGH": 148,
         "Year": 886,
         "PlaceRedacted": "Paris",
         "Recipient": "Gerona"
@@ -1662,7 +1662,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 57,
+        "MGH": 57,
         "Year": 882,
         "PlaceRedacted": "Worms",
         "Recipient": "Gorze"
@@ -1678,7 +1678,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 9,
+        "MGH": 9,
         "Year": 878,
         "PlaceRedacted": "NA",
         "Recipient": "Grandval"
@@ -1694,7 +1694,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 108,
+        "MGH": 108,
         "Year": 884,
         "PlaceRedacted": "Regensburg",
         "Recipient": "Grandval"
@@ -1710,7 +1710,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 101,
+        "MGH": 101,
         "Year": 884,
         "PlaceRedacted": "Worms",
         "Recipient": "Honau"
@@ -1726,7 +1726,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 129,
+        "MGH": 129,
         "Year": 885,
         "PlaceRedacted": "Lorsch",
         "Recipient": "Langres"
@@ -1742,7 +1742,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 147,
+        "MGH": 147,
         "Year": 886,
         "PlaceRedacted": "Paris",
         "Recipient": "Langres"
@@ -1758,7 +1758,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 152,
+        "MGH": 152,
         "Year": 887,
         "PlaceRedacted": "Schlettstadt",
         "Recipient": "Langres"
@@ -1774,7 +1774,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 153,
+        "MGH": 153,
         "Year": 887,
         "PlaceRedacted": "Schlettstadt",
         "Recipient": "Langres"
@@ -1790,7 +1790,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 154,
+        "MGH": 154,
         "Year": 887,
         "PlaceRedacted": "Schlettstadt",
         "Recipient": "Langres"
@@ -1806,7 +1806,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": "155a",
+        "MGH": "155a",
         "Year": "887?",
         "PlaceRedacted": "NA",
         "Recipient": "Langres"
@@ -1822,7 +1822,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 70,
+        "MGH": 70,
         "Year": 883,
         "PlaceRedacted": "Ulm",
         "Recipient": "Lorsch"
@@ -1838,7 +1838,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 103,
+        "MGH": 103,
         "Year": 884,
         "PlaceRedacted": "Worms",
         "Recipient": "Lorsch"
@@ -1854,7 +1854,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": "53a",
+        "MGH": "53a",
         "Year": "NA",
         "PlaceRedacted": "NA",
         "Recipient": "Luni"
@@ -1870,7 +1870,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 104,
+        "MGH": 104,
         "Year": 884,
         "PlaceRedacted": "Metz",
         "Recipient": "Liège   "
@@ -1886,7 +1886,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 123,
+        "MGH": 123,
         "Year": 885,
         "PlaceRedacted": "Etrepy",
         "Recipient": "Lyon"
@@ -1902,7 +1902,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 59,
+        "MGH": 59,
         "Year": 882,
         "PlaceRedacted": "Elsloo",
         "Recipient": "Metten"
@@ -1918,7 +1918,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 3,
+        "MGH": 3,
         "Year": 877,
         "PlaceRedacted": "NA",
         "Recipient": "Murbach"
@@ -1934,7 +1934,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 169,
+        "MGH": 169,
         "Year": 887,
         "PlaceRedacted": "Lustenau",
         "Recipient": "Neuenheerse"
@@ -1950,7 +1950,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 128,
+        "MGH": 128,
         "Year": 885,
         "PlaceRedacted": "Waiblingen",
         "Recipient": "Ötting"
@@ -1966,7 +1966,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 131,
+        "MGH": 131,
         "Year": 885,
         "PlaceRedacted": "Frankfurt",
         "Recipient": "Paderborn"
@@ -1982,7 +1982,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 168,
+        "MGH": 168,
         "Year": 887,
         "PlaceRedacted": "Lustenau",
         "Recipient": "Paderborn"
@@ -1998,7 +1998,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 32,
+        "MGH": 32,
         "Year": 881,
         "PlaceRedacted": "Pavia",
         "Recipient": "Parma"
@@ -2014,8 +2014,8 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 33,
-        "Year": "[881]",
+        "MGH": 33,
+        "Year": "881?",
         "PlaceRedacted": "Pavia",
         "Recipient": "Parma"
       },
@@ -2030,7 +2030,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 115,
+        "MGH": 115,
         "Year": 885,
         "PlaceRedacted": "Pavia",
         "Recipient": "Parma"
@@ -2046,7 +2046,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 134,
+        "MGH": 134,
         "Year": 886,
         "PlaceRedacted": "Regensburg",
         "Recipient": "Passau"
@@ -2062,7 +2062,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 135,
+        "MGH": 135,
         "Year": 886,
         "PlaceRedacted": "Regensburg",
         "Recipient": "Passau"
@@ -2078,7 +2078,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 35,
+        "MGH": 35,
         "Year": 881,
         "PlaceRedacted": "Pavia",
         "Recipient": "Piacenza"
@@ -2094,7 +2094,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 81,
+        "MGH": 81,
         "Year": 883,
         "PlaceRedacted": "Nonantola",
         "Recipient": "Piacenza"
@@ -2110,7 +2110,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 58,
+        "MGH": 58,
         "Year": 882,
         "PlaceRedacted": "Worms",
         "Recipient": "Prüm"
@@ -2126,7 +2126,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 100,
+        "MGH": 100,
         "Year": 884,
         "PlaceRedacted": "Worms",
         "Recipient": "Prüm"
@@ -2142,7 +2142,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 16,
+        "MGH": 16,
         "Year": 880,
         "PlaceRedacted": "Pavia",
         "Recipient": "Reggio"
@@ -2158,7 +2158,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 47,
+        "MGH": 47,
         "Year": 882,
         "PlaceRedacted": "Ravenna",
         "Recipient": "Reggio"
@@ -2174,7 +2174,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 78,
+        "MGH": 78,
         "Year": 883,
         "PlaceRedacted": "Nonantola",
         "Recipient": "Reggio"
@@ -2190,7 +2190,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 85,
+        "MGH": 85,
         "Year": 883,
         "PlaceRedacted": "Nonantola",
         "Recipient": "Reggio"
@@ -2206,7 +2206,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 6,
+        "MGH": 6,
         "Year": 878,
         "PlaceRedacted": "NA",
         "Recipient": "Reichenau"
@@ -2222,7 +2222,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 92,
+        "MGH": 92,
         "Year": 883,
         "PlaceRedacted": "Pavia",
         "Recipient": "Reichenau"
@@ -2238,7 +2238,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 99,
+        "MGH": 99,
         "Year": 884,
         "PlaceRedacted": "Reichenau",
         "Recipient": "Reichenau"
@@ -2254,7 +2254,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 106,
+        "MGH": 106,
         "Year": 884,
         "PlaceRedacted": "Metz",
         "Recipient": "Reims"
@@ -2270,7 +2270,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 1,
+        "MGH": 1,
         "Year": 876,
         "PlaceRedacted": "Eschenz",
         "Recipient": "Rheinau"
@@ -2286,7 +2286,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 27,
+        "MGH": 27,
         "Year": 880,
         "PlaceRedacted": "Piacenza",
         "Recipient": "Ss Antonin and Victor"
@@ -2302,7 +2302,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 39,
+        "MGH": 39,
         "Year": 881,
         "PlaceRedacted": "Pavia",
         "Recipient": "Ss Antonin and Victor"
@@ -2318,7 +2318,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 40,
+        "MGH": 40,
         "Year": "NA",
         "PlaceRedacted": "NA",
         "Recipient": "Ss Antonin and Victor"
@@ -2334,7 +2334,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 8,
+        "MGH": 8,
         "Year": 878,
         "PlaceRedacted": "NA",
         "Recipient": "Ss Felix and Regula"
@@ -2350,7 +2350,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 71,
+        "MGH": 71,
         "Year": 883,
         "PlaceRedacted": "Ulm",
         "Recipient": "Ss Felix and Regula"
@@ -2366,7 +2366,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 21,
+        "MGH": 21,
         "Year": 880,
         "PlaceRedacted": "NA",
         "Recipient": "St. Ambrose"
@@ -2382,7 +2382,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 23,
+        "MGH": 23,
         "Year": 880,
         "PlaceRedacted": "NA",
         "Recipient": "St. Ambrose"
@@ -2398,7 +2398,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": "137a",
+        "MGH": "137a",
         "Year": "NA",
         "PlaceRedacted": "Metz?",
         "Recipient": "St. Arnulf"
@@ -2414,7 +2414,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 117,
+        "MGH": 117,
         "Year": 885,
         "PlaceRedacted": "Granges",
         "Recipient": "St. Bénigne"
@@ -2430,7 +2430,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 20,
+        "MGH": 20,
         "Year": 880,
         "PlaceRedacted": "NA",
         "Recipient": "St. Cristina d’Olona"
@@ -2446,7 +2446,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 55,
+        "MGH": 55,
         "Year": "886?",
         "PlaceRedacted": "Pavia",
         "Recipient": "St. Cristina d’Olona"
@@ -2462,7 +2462,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 84,
+        "MGH": 84,
         "Year": 883,
         "PlaceRedacted": "Nonantola",
         "Recipient": "St. Croce"
@@ -2478,7 +2478,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 73,
+        "MGH": 73,
         "Year": 883,
         "PlaceRedacted": "Regensburg",
         "Recipient": "St. Emmeram"
@@ -2494,7 +2494,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 75,
+        "MGH": 75,
         "Year": 883,
         "PlaceRedacted": "Regensburg",
         "Recipient": "St. Emmeram"
@@ -2510,7 +2510,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 118,
+        "MGH": 118,
         "Year": 885,
         "PlaceRedacted": "Granges",
         "Recipient": "St. Etienne"
@@ -2526,7 +2526,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 125,
+        "MGH": 125,
         "Year": 885,
         "PlaceRedacted": "Etrepy",
         "Recipient": "St. Evre"
@@ -2542,7 +2542,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 5,
+        "MGH": 5,
         "Year": 877,
         "PlaceRedacted": "NA",
         "Recipient": "St. Gall"
@@ -2558,7 +2558,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 11,
+        "MGH": 11,
         "Year": 878,
         "PlaceRedacted": "NA",
         "Recipient": "St. Gall"
@@ -2574,7 +2574,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 13,
+        "MGH": 13,
         "Year": 879,
         "PlaceRedacted": "NA",
         "Recipient": "St. Gall"
@@ -2590,7 +2590,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 14,
+        "MGH": 14,
         "Year": 879,
         "PlaceRedacted": "NA",
         "Recipient": "St. Gall"
@@ -2606,7 +2606,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 60,
+        "MGH": 60,
         "Year": 882,
         "PlaceRedacted": "NA",
         "Recipient": "St. Gall"
@@ -2622,7 +2622,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 67,
+        "MGH": 67,
         "Year": 883,
         "PlaceRedacted": "Mindersdorf",
         "Recipient": "St. Gall"
@@ -2638,7 +2638,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 68,
+        "MGH": 68,
         "Year": 883,
         "PlaceRedacted": "Mindersdorf",
         "Recipient": "St. Gall"
@@ -2654,7 +2654,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 91,
+        "MGH": 91,
         "Year": 883,
         "PlaceRedacted": "Pavia",
         "Recipient": "St. Gall"
@@ -2670,7 +2670,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": "92a",
+        "MGH": "92a",
         "Year": "883?",
         "PlaceRedacted": "NA",
         "Recipient": "St. Gall"
@@ -2686,7 +2686,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 98,
+        "MGH": 98,
         "Year": "885?",
         "PlaceRedacted": "Bodman",
         "Recipient": "St. Gall"
@@ -2702,7 +2702,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 136,
+        "MGH": 136,
         "Year": 886,
         "PlaceRedacted": "Sasbach",
         "Recipient": "St. Gall"
@@ -2718,7 +2718,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 159,
+        "MGH": 159,
         "Year": 887,
         "PlaceRedacted": "Kirchen",
         "Recipient": "St. Gall"
@@ -2734,7 +2734,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 145,
+        "MGH": 145,
         "Year": 886,
         "PlaceRedacted": "Paris",
         "Recipient": "St. Germanus"
@@ -2750,7 +2750,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 79,
+        "MGH": 79,
         "Year": 883,
         "PlaceRedacted": "Borgo di Fontana fredda",
         "Recipient": "St. Giustina"
@@ -2766,7 +2766,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 46,
+        "MGH": 46,
         "Year": 881,
         "PlaceRedacted": "Milan",
         "Recipient": "St. John"
@@ -2782,7 +2782,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 120,
+        "MGH": 120,
         "Year": 885,
         "PlaceRedacted": "Gondreville",
         "Recipient": "St. Marcel"
@@ -2798,7 +2798,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 122,
+        "MGH": 122,
         "Year": 885,
         "PlaceRedacted": "Ponthion",
         "Recipient": "St. Martin  "
@@ -2814,7 +2814,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 160,
+        "MGH": 160,
         "Year": 887,
         "PlaceRedacted": "Kirchen",
         "Recipient": "St. Martin  "
@@ -2830,7 +2830,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 139,
+        "MGH": 139,
         "Year": 886,
         "PlaceRedacted": "Servais",
         "Recipient": "St. Martin  "
@@ -2846,7 +2846,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 44,
+        "MGH": 44,
         "Year": 881,
         "PlaceRedacted": "Milan",
         "Recipient": "St. Mary"
@@ -2862,7 +2862,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 45,
+        "MGH": 45,
         "Year": 881,
         "PlaceRedacted": "Milan",
         "Recipient": "St. Mary"
@@ -2878,7 +2878,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 109,
+        "MGH": 109,
         "Year": "884?",
         "PlaceRedacted": "Regensburg",
         "Recipient": "St. Mary"
@@ -2894,7 +2894,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 72,
+        "MGH": 72,
         "Year": 883,
         "PlaceRedacted": "Regensburg",
         "Recipient": "St. Mary"
@@ -2910,7 +2910,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 107,
+        "MGH": 107,
         "Year": 884,
         "PlaceRedacted": "Regensburg",
         "Recipient": "St. Mary"
@@ -2926,7 +2926,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 149,
+        "MGH": 149,
         "Year": 886,
         "PlaceRedacted": "Paris",
         "Recipient": "St. Maur-des-Fossés"
@@ -2942,7 +2942,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 133,
+        "MGH": 133,
         "Year": 885,
         "PlaceRedacted": "Worms",
         "Recipient": "St. Maximin"
@@ -2958,7 +2958,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 163,
+        "MGH": 163,
         "Year": 887,
         "PlaceRedacted": "NA",
         "Recipient": "St. Médard"
@@ -2974,7 +2974,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 146,
+        "MGH": 146,
         "Year": 886,
         "PlaceRedacted": "Paris",
         "Recipient": "St. Moritz"
@@ -2990,7 +2990,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 126,
+        "MGH": 126,
         "Year": 885,
         "PlaceRedacted": "Etrepy",
         "Recipient": "St. Nicomedes"
@@ -3006,7 +3006,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 28,
+        "MGH": 28,
         "Year": 880,
         "PlaceRedacted": "Piacenza",
         "Recipient": "St. Salvatore  "
@@ -3022,7 +3022,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 156,
+        "MGH": 156,
         "Year": 887,
         "PlaceRedacted": "Rottweil",
         "Recipient": "St. Salvatore  "
@@ -3038,7 +3038,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 140,
+        "MGH": 140,
         "Year": 886,
         "PlaceRedacted": "Quierzy",
         "Recipient": "St. Seine"
@@ -3054,7 +3054,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 151,
+        "MGH": 151,
         "Year": "NA",
         "PlaceRedacted": "NA",
         "Recipient": "St. Vincent"
@@ -3070,7 +3070,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 64,
+        "MGH": 64,
         "Year": 882,
         "PlaceRedacted": "Worms",
         "Recipient": "Stavelot"
@@ -3086,7 +3086,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 26,
+        "MGH": 26,
         "Year": 880,
         "PlaceRedacted": "Piacenza",
         "Recipient": "Tolla"
@@ -3102,7 +3102,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 121,
+        "MGH": 121,
         "Year": 885,
         "PlaceRedacted": "Toul",
         "Recipient": "Toul"
@@ -3118,7 +3118,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 124,
+        "MGH": 124,
         "Year": 885,
         "PlaceRedacted": "Etrepy",
         "Recipient": "Toul"
@@ -3134,7 +3134,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 102,
+        "MGH": 102,
         "Year": 884,
         "PlaceRedacted": "NA",
         "Recipient": "Trier"
@@ -3150,7 +3150,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 54,
+        "MGH": 54,
         "Year": 882,
         "PlaceRedacted": "Pavia",
         "Recipient": "Vercelli"
@@ -3166,7 +3166,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 49,
+        "MGH": 49,
         "Year": 882,
         "PlaceRedacted": "Ravenna",
         "Recipient": "Verona"
@@ -3182,7 +3182,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 63,
+        "MGH": 63,
         "Year": 882,
         "PlaceRedacted": "Worms",
         "Recipient": "Wissenbourg"
@@ -3198,7 +3198,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 66,
+        "MGH": 66,
         "Year": 883,
         "PlaceRedacted": "Kolmar",
         "Recipient": "Wurzburg"
@@ -3214,7 +3214,7 @@ var CFJSON = {
     {
       "type": "Feature",
       "properties": {
-        "MGH #": 41,
+        "MGH": 41,
         "Year": 881,
         "PlaceRedacted": "NA",
         "Recipient": "Zurich"
