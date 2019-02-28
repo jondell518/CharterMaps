@@ -155,7 +155,7 @@ basemap6.addTo(map); //Adds the basemap to the map
 	//Add the layers to the subgroups
 	LGRecipients.addTo(LGGroup);
 	ARecipients.addTo(ArnulfGroup);
-  CFRecipients.addTo(CFGroup);
+  	CFRecipients.addTo(CFGroup);
 
 	//Add the parent group and then initialize Louis the German as the first subgroup.
 	parentGroup.addTo(map);
@@ -163,16 +163,16 @@ basemap6.addTo(map); //Adds the basemap to the map
 	
 
 	//Create the variables to pass to the layer control which give the layer names
-	var baseLayers = {
+var baseLayers = {
     "Base map": basemap,
     //"Base map 2": basemap2,
     "Base map 2": basemap3,
     "Base map 3": basemap4,
     "Base map 4": basemap5,
     "Base map 5": basemap6,
-  	}
+};
 
-  	var overlays = {
+var overlays = {
 
   	"Louis the German (827-876)": LGGroup,
     /*"Louis the Younger (876-882)": LYGroup,
@@ -180,7 +180,7 @@ basemap6.addTo(map); //Adds the basemap to the map
     "Charles the Fat (876-887)": CFGroup,
     "Arnulf of Carinthia (887-899)": ArnulfGroup,
 
-  	};
+};
 
   //Add the actual layer control to the map
   L.control.layers(baseLayers, overlays, {collapsed: false, autoZIndex: false, hideSingleBase: true,}).addTo(map);
