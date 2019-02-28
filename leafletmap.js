@@ -34,13 +34,13 @@ AIcon = initIcons('icons/marker-icon-green.png');
   }); //This is the default basemap
   
 
-  var basemap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+ /* var basemap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   subdomains: 'abcd',
   minZoom: mapMinZoom,
   maxZoom: mapMaxZoom,
   ext: 'jpg'
-  }); 
+  }); */
 
   var basemap3 = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -165,11 +165,11 @@ basemap6.addTo(map); //Adds the basemap to the map
 	//Create the variables to pass to the layer control which give the layer names
 	var baseLayers = {
     "Base map": basemap,
-    "Base map 2": basemap2,
-    "Base map 3": basemap3,
-    "Base map 4": basemap4,
-    "Base map 5": basemap5,
-    "Default Basemap": basemap6,
+    //"Base map 2": basemap2,
+    "Base map 2": basemap3,
+    "Base map 3": basemap4,
+    "Base map 4": basemap5,
+    "Base map 5": basemap6,
   	}
 
   	var overlays = {
