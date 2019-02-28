@@ -91,8 +91,8 @@ basemap6.addTo(map); //Adds the basemap to the map
           layer.bindPopup("King: " + king 
           + "<br>" + "Recipient: " + feature.properties.Recipient 
           + "<br>" + "Year: " + feature.properties.Year 
-          + "<br>" + "MGH #: " + feature.properties.MGH 
-          + "<br>" + "Place Redacted: Not Specified").openPopup();
+          + "<br>" + "Place Redacted: Not Specified"
+          + "<br>" + "MGH #: " + feature.properties.MGH).openPopup();
         }
         else if(feature.properties.MGH != null)
         {
@@ -139,13 +139,13 @@ basemap6.addTo(map); //Adds the basemap to the map
   	var parentGroup = L.markerClusterGroup({
 		showCoverageOnHover: false,
 		zoomToBoundsOnClick: true,
-		maxClusterRadius: 20,
+		maxClusterRadius: 35,
 	});
 
 	//These are the subgroups which will have the layers added to them later.
 	var LGGroup = L.featureGroup.subGroup(parentGroup);
 	var ArnulfGroup = L.featureGroup.subGroup(parentGroup);
-  var CFGroup = L.featureGroup.subGroup(parentGroup);
+  	var CFGroup = L.featureGroup.subGroup(parentGroup);
 	
 	/*These will be uncommented when I have the data
 	var CaGroup = L.featureGroup.subGroup(parentGroup);
