@@ -1208,4 +1208,2024 @@ var LGJSON = {
 
 var CaJSON;
 var LYJSON;
-var CFJSON;
+var CFJSON = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 74,
+        "Year": 883,
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "Altaich"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.272757,
+          48.355087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 24,
+        "Year": 880,
+        "PlaceRedacted": "NA",
+        "Recipient": "Andlau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.417735,
+          48.386522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 95,
+        "Year": "886?",
+        "PlaceRedacted": "Kolmar",
+        "Recipient": "Andlau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.417735,
+          48.386522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 12,
+        "Year": 879,
+        "PlaceRedacted": "NA",
+        "Recipient": "Arezzo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.86306,
+          43.471199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 31,
+        "Year": "881)",
+        "PlaceRedacted": "Siena",
+        "Recipient": "Arezzo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.86306,
+          43.471199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 50,
+        "Year": 882,
+        "PlaceRedacted": "Ravenna",
+        "Recipient": "Arezzo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.86306,
+          43.471199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 111,
+        "Year": 885,
+        "PlaceRedacted": "Murgula",
+        "Recipient": "Asti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.20681,
+          44.90086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 48,
+        "Year": 882,
+        "PlaceRedacted": "NA",
+        "Recipient": "Belluno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.216709,
+          46.142464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 52,
+        "Year": 882,
+        "PlaceRedacted": "Ravenna",
+        "Recipient": "Bergamo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.67727,
+          45.698265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 87,
+        "Year": 883,
+        "PlaceRedacted": "Murgula",
+        "Recipient": "Bergamo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.67727,
+          45.698265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 88,
+        "Year": 883,
+        "PlaceRedacted": "Murgula",
+        "Recipient": "Bergamo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.67727,
+          45.698265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 89,
+        "Year": 883,
+        "PlaceRedacted": "Murgula",
+        "Recipient": "Bergamo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.67727,
+          45.698265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 34,
+        "Year": 881,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Brugnato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.724035,
+          44.237097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 53,
+        "Year": 882,
+        "PlaceRedacted": "Ravenna",
+        "Recipient": "Brugnato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.724035,
+          44.237097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 82,
+        "Year": 883,
+        "PlaceRedacted": "Nonantola",
+        "Recipient": "Casauria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.92633,
+          42.234803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 119,
+        "Year": 885,
+        "PlaceRedacted": "Gondreville",
+        "Recipient": "Chalon-sur-Saône"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.85289,
+          46.784382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 150,
+        "Year": 886,
+        "PlaceRedacted": "Iovilla nova",
+        "Recipient": "Châlons-sur-Marne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.91807,
+          49.290009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 30,
+        "Year": 881,
+        "PlaceRedacted": "Reggio",
+        "Recipient": "Chur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.53067,
+          46.849491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 62,
+        "Year": 882,
+        "PlaceRedacted": "Worms",
+        "Recipient": "Corvey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.409679,
+          51.779423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 51,
+        "Year": 882,
+        "PlaceRedacted": "Ravenna",
+        "Recipient": "Cremona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.022651,
+          45.133247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 90,
+        "Year": 883,
+        "PlaceRedacted": "Murgela",
+        "Recipient": "Cremona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.022651,
+          45.133247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 138,
+        "Year": 886,
+        "PlaceRedacted": "Attigny",
+        "Recipient": "Cusset"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.460274,
+          46.132424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 83,
+        "Year": 883,
+        "PlaceRedacted": "Nonantola",
+        "Recipient": "Farfa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.703947,
+          42.232838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 65,
+        "Year": 882,
+        "PlaceRedacted": "Frankfurt",
+        "Recipient": "Frankfurt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.682127,
+          50.110924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 69,
+        "Year": "NA",
+        "PlaceRedacted": "NA",
+        "Recipient": "Fulda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.67431,
+          50.55389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 97,
+        "Year": 884,
+        "PlaceRedacted": "NA",
+        "Recipient": "Fulda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.67431,
+          50.55389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 132,
+        "Year": 885,
+        "PlaceRedacted": "Frankfurt",
+        "Recipient": "Fulda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.67431,
+          50.55389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 148,
+        "Year": 886,
+        "PlaceRedacted": "Paris",
+        "Recipient": "Gerona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82361,
+          41.981651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 57,
+        "Year": 882,
+        "PlaceRedacted": "Worms",
+        "Recipient": "Gorze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.998824,
+          49.051624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 9,
+        "Year": 878,
+        "PlaceRedacted": "NA",
+        "Recipient": "Grandval"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.645561,
+          45.598193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 108,
+        "Year": 884,
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "Grandval"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.645561,
+          45.598193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 101,
+        "Year": 884,
+        "PlaceRedacted": "Worms",
+        "Recipient": "Honau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.870328,
+          48.640717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 129,
+        "Year": 885,
+        "PlaceRedacted": "Lorsch",
+        "Recipient": "Langres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.33408,
+          47.862942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 147,
+        "Year": 886,
+        "PlaceRedacted": "Paris",
+        "Recipient": "Langres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.33408,
+          47.862942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 152,
+        "Year": 887,
+        "PlaceRedacted": "Schlettstadt",
+        "Recipient": "Langres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.33408,
+          47.862942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 153,
+        "Year": 887,
+        "PlaceRedacted": "Schlettstadt",
+        "Recipient": "Langres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.33408,
+          47.862942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 154,
+        "Year": 887,
+        "PlaceRedacted": "Schlettstadt",
+        "Recipient": "Langres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.33408,
+          47.862942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": "155a",
+        "Year": "887?",
+        "PlaceRedacted": "NA",
+        "Recipient": "Langres"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.33408,
+          47.862942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 70,
+        "Year": 883,
+        "PlaceRedacted": "Ulm",
+        "Recipient": "Lorsch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.568281,
+          49.654697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 103,
+        "Year": 884,
+        "PlaceRedacted": "Worms",
+        "Recipient": "Lorsch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.568281,
+          49.654697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": "53a",
+        "Year": "NA",
+        "PlaceRedacted": "NA",
+        "Recipient": "Luni"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.04287,
+          44.085129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 104,
+        "Year": 884,
+        "PlaceRedacted": "Metz",
+        "Recipient": "Liège   "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.57156,
+          50.643909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 123,
+        "Year": 885,
+        "PlaceRedacted": "Etrepy",
+        "Recipient": "Lyon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.835659,
+          45.764042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 59,
+        "Year": 882,
+        "PlaceRedacted": "Elsloo",
+        "Recipient": "Metten"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.91552,
+          48.854855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 3,
+        "Year": 877,
+        "PlaceRedacted": "NA",
+        "Recipient": "Murbach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.157162,
+          47.923317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 169,
+        "Year": 887,
+        "PlaceRedacted": "Lustenau",
+        "Recipient": "Neuenheerse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.998705,
+          51.675953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 128,
+        "Year": 885,
+        "PlaceRedacted": "Waiblingen",
+        "Recipient": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.801853,
+          48.872535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 131,
+        "Year": 885,
+        "PlaceRedacted": "Frankfurt",
+        "Recipient": "Paderborn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.757509,
+          51.718922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 168,
+        "Year": 887,
+        "PlaceRedacted": "Lustenau",
+        "Recipient": "Paderborn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.757509,
+          51.718922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 32,
+        "Year": 881,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Parma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.327904,
+          44.801483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 33,
+        "Year": "[881]",
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Parma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.327904,
+          44.801483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 115,
+        "Year": 885,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Parma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.327904,
+          44.801483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 134,
+        "Year": 886,
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "Passau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.431947,
+          48.566734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 135,
+        "Year": 886,
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "Passau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.431947,
+          48.566734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 35,
+        "Year": 881,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Piacenza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 81,
+        "Year": 883,
+        "PlaceRedacted": "Nonantola",
+        "Recipient": "Piacenza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 58,
+        "Year": 882,
+        "PlaceRedacted": "Worms",
+        "Recipient": "Prüm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.42474,
+          50.207329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 100,
+        "Year": 884,
+        "PlaceRedacted": "Worms",
+        "Recipient": "Prüm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.42474,
+          50.207329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 16,
+        "Year": 880,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Reggio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.975966,
+          44.739886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 47,
+        "Year": 882,
+        "PlaceRedacted": "Ravenna",
+        "Recipient": "Reggio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.975966,
+          44.739886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 78,
+        "Year": 883,
+        "PlaceRedacted": "Nonantola",
+        "Recipient": "Reggio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.975966,
+          44.739886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 85,
+        "Year": 883,
+        "PlaceRedacted": "Nonantola",
+        "Recipient": "Reggio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.975966,
+          44.739886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 6,
+        "Year": 878,
+        "PlaceRedacted": "NA",
+        "Recipient": "Reichenau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.06395,
+          47.689449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 92,
+        "Year": 883,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Reichenau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.06395,
+          47.689449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 99,
+        "Year": 884,
+        "PlaceRedacted": "Reichenau",
+        "Recipient": "Reichenau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.06395,
+          47.689449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 106,
+        "Year": 884,
+        "PlaceRedacted": "Metz",
+        "Recipient": "Reims"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.03309,
+          49.256599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 1,
+        "Year": 876,
+        "PlaceRedacted": "Eschenz",
+        "Recipient": "Rheinau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.705488,
+          48.318096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 27,
+        "Year": 880,
+        "PlaceRedacted": "Piacenza",
+        "Recipient": "Ss Antonin and Victor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 39,
+        "Year": 881,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Ss Antonin and Victor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 40,
+        "Year": "NA",
+        "PlaceRedacted": "NA",
+        "Recipient": "Ss Antonin and Victor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 8,
+        "Year": 878,
+        "PlaceRedacted": "NA",
+        "Recipient": "Ss Felix and Regula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.513612,
+          47.38106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 71,
+        "Year": 883,
+        "PlaceRedacted": "Ulm",
+        "Recipient": "Ss Felix and Regula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.513612,
+          47.38106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 21,
+        "Year": 880,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Ambrose"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.189982,
+          45.464203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 23,
+        "Year": 880,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Ambrose"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.189982,
+          45.464203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": "137a",
+        "Year": "NA",
+        "PlaceRedacted": "Metz?",
+        "Recipient": "St. Arnulf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.17209,
+          49.11446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 117,
+        "Year": 885,
+        "PlaceRedacted": "Granges",
+        "Recipient": "St. Bénigne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9716,
+          46.43889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 20,
+        "Year": 880,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Cristina d’Olona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.37048,
+          45.15893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 55,
+        "Year": "886?",
+        "PlaceRedacted": "Pavia",
+        "Recipient": "St. Cristina d’Olona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.37048,
+          45.15893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 84,
+        "Year": 883,
+        "PlaceRedacted": "Nonantola",
+        "Recipient": "St. Croce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7114,
+          43.28313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 73,
+        "Year": 883,
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "St. Emmeram"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.101624,
+          49.013432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 75,
+        "Year": 883,
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "St. Emmeram"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.101624,
+          49.013432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 118,
+        "Year": 885,
+        "PlaceRedacted": "Granges",
+        "Recipient": "St. Etienne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.38781,
+          45.43965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 125,
+        "Year": 885,
+        "PlaceRedacted": "Etrepy",
+        "Recipient": "St. Evre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.88772,
+          48.66547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 5,
+        "Year": 877,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 11,
+        "Year": 878,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 13,
+        "Year": 879,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 14,
+        "Year": 879,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 60,
+        "Year": 882,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 67,
+        "Year": 883,
+        "PlaceRedacted": "Mindersdorf",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 68,
+        "Year": 883,
+        "PlaceRedacted": "Mindersdorf",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 91,
+        "Year": 883,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": "92a",
+        "Year": "883?",
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 98,
+        "Year": "885?",
+        "PlaceRedacted": "Bodman",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 136,
+        "Year": 886,
+        "PlaceRedacted": "Sasbach",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 159,
+        "Year": 887,
+        "PlaceRedacted": "Kirchen",
+        "Recipient": "St. Gall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.376588,
+          47.42506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 145,
+        "Year": 886,
+        "PlaceRedacted": "Paris",
+        "Recipient": "St. Germanus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.57448,
+          47.798382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 79,
+        "Year": 883,
+        "PlaceRedacted": "Borgo di Fontana fredda",
+        "Recipient": "St. Giustina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 46,
+        "Year": 881,
+        "PlaceRedacted": "Milan",
+        "Recipient": "St. John"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.27297,
+          45.58313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 120,
+        "Year": 885,
+        "PlaceRedacted": "Gondreville",
+        "Recipient": "St. Marcel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.89241,
+          46.77433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 122,
+        "Year": 885,
+        "PlaceRedacted": "Ponthion",
+        "Recipient": "St. Martin  "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2994,
+          46.949749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 160,
+        "Year": 887,
+        "PlaceRedacted": "Kirchen",
+        "Recipient": "St. Martin  "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.68885,
+          47.390289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 139,
+        "Year": 886,
+        "PlaceRedacted": "Servais",
+        "Recipient": "St. Martin  "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.68885,
+          47.390289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 44,
+        "Year": 881,
+        "PlaceRedacted": "Milan",
+        "Recipient": "St. Mary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.15656,
+          45.18589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 45,
+        "Year": 881,
+        "PlaceRedacted": "Milan",
+        "Recipient": "St. Mary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.15656,
+          45.18589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 109,
+        "Year": "884?",
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "St. Mary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.083887,
+          50.775345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 72,
+        "Year": 883,
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "St. Mary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.101624,
+          49.013432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 107,
+        "Year": 884,
+        "PlaceRedacted": "Regensburg",
+        "Recipient": "St. Mary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.101624,
+          49.013432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 149,
+        "Year": 886,
+        "PlaceRedacted": "Paris",
+        "Recipient": "St. Maur-des-Fossés"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5029,
+          48.79799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 133,
+        "Year": 885,
+        "PlaceRedacted": "Worms",
+        "Recipient": "St. Maximin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.637143,
+          49.749992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 163,
+        "Year": 887,
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Médard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.32342,
+          49.376637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 146,
+        "Year": 886,
+        "PlaceRedacted": "Paris",
+        "Recipient": "St. Moritz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.83844,
+          46.497059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 126,
+        "Year": 885,
+        "PlaceRedacted": "Etrepy",
+        "Recipient": "St. Nicomedes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.327904,
+          44.801483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 28,
+        "Year": 880,
+        "PlaceRedacted": "Piacenza",
+        "Recipient": "St. Salvatore  "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.211802,
+          45.541553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 156,
+        "Year": 887,
+        "PlaceRedacted": "Rottweil",
+        "Recipient": "St. Salvatore  "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.211802,
+          45.541553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 140,
+        "Year": 886,
+        "PlaceRedacted": "Quierzy",
+        "Recipient": "St. Seine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.82416,
+          46.73343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 151,
+        "Year": "NA",
+        "PlaceRedacted": "NA",
+        "Recipient": "St. Vincent"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.82919,
+          46.30632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 64,
+        "Year": 882,
+        "PlaceRedacted": "Worms",
+        "Recipient": "Stavelot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.929,
+          50.39418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 26,
+        "Year": 880,
+        "PlaceRedacted": "Piacenza",
+        "Recipient": "Tolla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.90331,
+          44.91924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 121,
+        "Year": 885,
+        "PlaceRedacted": "Toul",
+        "Recipient": "Toul"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.88772,
+          48.66547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 124,
+        "Year": 885,
+        "PlaceRedacted": "Etrepy",
+        "Recipient": "Toul"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.88772,
+          48.66547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 102,
+        "Year": 884,
+        "PlaceRedacted": "NA",
+        "Recipient": "Trier"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.637143,
+          49.749992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 54,
+        "Year": 882,
+        "PlaceRedacted": "Pavia",
+        "Recipient": "Vercelli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.42624,
+          45.32111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 49,
+        "Year": 882,
+        "PlaceRedacted": "Ravenna",
+        "Recipient": "Verona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.993313,
+          45.438618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 63,
+        "Year": 882,
+        "PlaceRedacted": "Worms",
+        "Recipient": "Wissenbourg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.94492,
+          49.03373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 66,
+        "Year": 883,
+        "PlaceRedacted": "Kolmar",
+        "Recipient": "Wurzburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.953355,
+          49.791306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH #": 41,
+        "Year": 881,
+        "PlaceRedacted": "NA",
+        "Recipient": "Zurich"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.513612,
+          47.38106
+        ]
+      }
+    }
+  ]
+};

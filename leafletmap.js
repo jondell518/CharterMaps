@@ -63,7 +63,7 @@ var basemap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}
 var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
-	minZoom: 5,
+	minZoom: 3,
   maxZoom: 8,
 });
 
@@ -99,10 +99,10 @@ basemap6.addTo(map); //Adds the basemap to the map
   //that we can add to the map.
     var ARecipients = createNewLayer(AJSON,AIcon, "Arnulf");
     var LGRecipients = createNewLayer(LGJSON, LGIcon, "Louis the German"); 
+    var CFRecipients = createNewLayer(CFJSON, CFIcon, "Charles the Fat"); 
     
     //These need data and will be uncommented then
-    /*var CaRecipients = createNewLayer(CaJSON, CaIcon, "Carloman"); 
-    var CFRecipients= createNewLayer(CFJSON, CFIcon, "Charles the Fat"); 
+    /*var CaRecipients = createNewLayer(CaJSON, CaIcon, "Carloman");  
   	var LYRecipients= createNewLayer(LYJSON, LYIcon, "Louis the Younger");*/
 
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
@@ -113,12 +113,13 @@ basemap6.addTo(map); //Adds the basemap to the map
   	var parentGroup = L.markerClusterGroup({
 		showCoverageOnHover: false,
 		zoomToBoundsOnClick: true,
-		maxClusterRadius: 5,
+		maxClusterRadius: 20,
 	});
 
 	//These are the subgroups which will have the layers added to them later.
 	var LGGroup = L.featureGroup.subGroup(parentGroup);
 	var ArnulfGroup = L.featureGroup.subGroup(parentGroup);
+  var CFGroup = L.featureGroup.subGroup(parentGroup);
 	
 	/*These will be uncommented when I have the data
 	var CaGroup = L.featureGroup.subGroup(parentGroup);
@@ -128,6 +129,7 @@ basemap6.addTo(map); //Adds the basemap to the map
 	//Add the layers to the subgroups
 	LGRecipients.addTo(LGGroup);
 	ARecipients.addTo(ArnulfGroup);
+  CFRecipients.addTo(CFGroup);
 
 	//Add the parent group and then initialize Louis the German as the first subgroup.
 	parentGroup.addTo(map);
@@ -148,8 +150,8 @@ basemap6.addTo(map); //Adds the basemap to the map
 
   	"Louis the German (827-876)": LGGroup,
     /*"Louis the Younger (876-882)": LYGroup,
-    "Carloman (876-880)": CaGroup,
-    "Charles the Fat (876-887)": CFGroup,*/
+    "Carloman (876-880)": CaGroup,*/
+    "Charles the Fat (876-887)": CFGroup,
     "Arnulf of Carinthia (887-899)": ArnulfGroup,
 
   	};
