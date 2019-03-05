@@ -34,22 +34,7 @@ AIcon = initIcons('icons/marker-icon-green.png');
   }); //This is the default basemap
   
 
- /* var basemap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
-  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  subdomains: 'abcd',
-  minZoom: mapMinZoom,
-  maxZoom: mapMaxZoom,
-  ext: 'jpg'
-  }); */
-
-  var basemap3 = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-	subdomains: 'abcd',
-	minZoom: mapMinZoom,
-  maxZoom: mapMaxZoom,
-});
-
-  var basemap4 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}{r}.{ext}', {
+  var basemap2 = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}{r}.{ext}', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 	subdomains: 'abcd',
 	minZoom: mapMinZoom,
@@ -57,23 +42,17 @@ AIcon = initIcons('icons/marker-icon-green.png');
 	ext: 'png'
 });
 
-var basemap5 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-	subdomains: 'abcd',
-	minZoom: mapMinZoom,
-  maxZoom: mapMaxZoom,
-});
 
-var basemap6 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
+var basemap3 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
 	minZoom: mapMinZoom,
-  maxZoom: mapMaxZoom,
+  	maxZoom: mapMaxZoom,
 });
 
 
 var map = L.map('my-map').setView([49.653926, 8.567507], 6); //Creates the basemap and centers it on Worms for the time being
-basemap6.addTo(map); //Adds the basemap to the map
+basemap3.addTo(map); //Adds the basemap to the map
 
 
   /*This function takes three inputs: the GeoJSON data, the icon you want to use for the layer, and the name of the king granting 
@@ -86,39 +65,23 @@ basemap6.addTo(map); //Adds the basemap to the map
       onEachFeature: function (feature, layer){
         layer.setIcon(icon);
         
-       	if(feature.properties.RecipientAlt != "NA")
-       	{
-       		layer.bindPopup("King: " + king 
-          + "<br>" + "Recipient: " + feature.properties.Recipient 
-          + " in " + feature.properties.RecipientAlt
-          + "<br>" + "Year: " + feature.properties.Year 
-          + "<br>" + "MGH #: " + feature.properties.MGH 
-          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
-
-       	}
-		else if(feature.properties.PlaceRedacted == "NA" && feature.properties.MGH != null)
+        //This just controls whether the popup displays a secondary recipient location (for instance when the location is in a more well known city such as Regensburg)
+        if(feature.properties.RecipientAlt != "NA")
         {
-          layer.bindPopup("King: " + king 
-          + "<br>" + "Recipient: " + feature.properties.Recipient 
-          + "<br>" + "Year: " + feature.properties.Year 
-          + "<br>" + "Place Redacted: Not Specified"
-          + "<br>" + "MGH #: " + feature.properties.MGH).openPopup();
-        }
-        else if(feature.properties.MGH != null)
-        {
-           layer.bindPopup("King: " + king 
-          + "<br>" + "Recipient: " + feature.properties.Recipient 
-          + "<br>" + "Year: " + feature.properties.Year 
-          + "<br>" + "MGH #: " + feature.properties.MGH 
-          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+        	layer.bindPopup("King: " + king
+          	+ "<br>" + "MGH #: " + feature.properties.MGH 
+          	+ "<br>" + "Recipient: " + feature.properties.Recipient 
+          	+ " in " + feature.properties.RecipientAlt
+         	+ "<br>" + "Year: " + feature.properties.Year 
+         	+ "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
         }
         else
         {
-           layer.bindPopup("King: " + king 
-          + "<br>" + "Recipient: " + feature.properties.Recipient 
-          + "<br>" + "Year: " + feature.properties.Year 
-          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
-        
+        	layer.bindPopup("King: " + king
+          	+ "<br>" + "MGH #: " + feature.properties.MGH 
+          	+ "<br>" + "Recipient: " + feature.properties.Recipient 
+         	+ "<br>" + "Year: " + feature.properties.Year 
+         	+ "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
         }
        
         //Might add URL links for each charter: "<br>" + '<a href=' + feature.properties.url + '>MGH</a>').openPopup();
@@ -137,7 +100,7 @@ basemap6.addTo(map); //Adds the basemap to the map
     var LGRecipients = createNewLayer(LGJSON, LGIcon, "Louis the German"); 
     var CFRecipients = createNewLayer(CFJSON, CFIcon, "Charles the Fat"); 
     var CaRecipients = createNewLayer(CaJSON, CaIcon, "Carloman")
-    //var LYRecipients= createNewLayer(LYJSON, LYIcon, "Louis the Younger");
+    var LYRecipients= createNewLayer(LYJSON, LYIcon, "Louis the Younger");
    
 
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
@@ -148,7 +111,7 @@ basemap6.addTo(map); //Adds the basemap to the map
   	var parentGroup = L.markerClusterGroup({
 		showCoverageOnHover: false,
 		zoomToBoundsOnClick: true,
-		maxClusterRadius: 35,
+		maxClusterRadius: 10,
 	});
 
 	//These are the subgroups which will have the layers added to them later.
@@ -156,7 +119,7 @@ basemap6.addTo(map); //Adds the basemap to the map
 	var ArnulfGroup = L.featureGroup.subGroup(parentGroup);
   	var CFGroup = L.featureGroup.subGroup(parentGroup);
   	var CaGroup = L.featureGroup.subGroup(parentGroup);
-  	//var LYGroup = L.featureGroup.subGroup(parentGroup);
+  	var LYGroup = L.featureGroup.subGroup(parentGroup);
 	
 
 	
@@ -165,7 +128,7 @@ basemap6.addTo(map); //Adds the basemap to the map
 	ARecipients.addTo(ArnulfGroup);
   	CFRecipients.addTo(CFGroup);
   	CaRecipients.addTo(CaGroup);
-  	//LYRecipients.addTo(LYGroup);
+  	LYRecipients.addTo(LYGroup);
 
 	//Add the parent group and then initialize Louis the German as the first subgroup.
 	parentGroup.addTo(map);
@@ -173,19 +136,16 @@ basemap6.addTo(map); //Adds the basemap to the map
 	
 
 	//Create the variables to pass to the layer control which give the layer names
-var baseLayers = {
-    "Base map": basemap,
-    //"Base map 2": basemap2,
-    "Base map 2": basemap3,
-    "Base map 3": basemap4,
-    "Base map 4": basemap5,
-    "Base map 5": basemap6,
-};
+	var baseLayers = {
+    "Borders": basemap,
+    "Terrain": basemap2,
+    "Default": basemap3,
+	};
 
 var overlays = {
 
   	"Louis the German (827-876)": LGGroup,
-    //"Louis the Younger (876-882)": LYGroup,
+    "Louis the Younger (876-882)": LYGroup,
     "Carloman (876-880)": CaGroup,
     "Charles the Fat (876-887)": CFGroup,
     "Arnulf of Carinthia (887-899)": ArnulfGroup,
