@@ -1450,7 +1450,7 @@ var AJSON = {
       "type": "Feature",
       "properties": {
         "MGH": 116,
-        "Recipient": "St. Metten",
+        "Recipient": "Metten",
         "RecipientAlt": "NA",
         "Year": 893,
         "PlaceRedacted": "Regensburg"
@@ -1467,7 +1467,7 @@ var AJSON = {
       "type": "Feature",
       "properties": {
         "MGH": 119,
-        "Recipient": "St. Metten",
+        "Recipient": "Metten",
         "RecipientAlt": "NA",
         "Year": 893,
         "PlaceRedacted": "Regensburg"
@@ -6031,8 +6031,8 @@ var CFJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.9716,
-          46.43889
+          5.044040,
+          47.327209
         ]
       }
     },
@@ -6133,8 +6133,8 @@ var CFJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.38781,
-          45.43965
+          5.044040,
+          47.327209
         ]
       }
     },

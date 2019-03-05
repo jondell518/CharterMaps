@@ -106,7 +106,7 @@ basemap3.addTo(map); //Adds the basemap to the map
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
   //This uses two plugins: Leaflet.MarkerCluster and Leaflet.FeatureGroup.Subgroup
 
-  //The parent group controls the marker cluster group, which the default options have been set to now show the boundaries of a cluster group, and turned down the max cluster radius to a smaller amount
+  //The parent group controls the marker cluster group, which the default options have been set to not show the boundaries of a cluster group, and turned down the max cluster radius to a smaller amount
   //since this is really for markers on the same exact spot or very close together. 
   	var parentGroup = L.markerClusterGroup({
 		showCoverageOnHover: false,
