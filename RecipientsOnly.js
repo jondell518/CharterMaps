@@ -1206,7 +1206,443 @@ var LGJSON = {
   ]
 };
 
-var CaJSON;
+var CaJSON = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 2,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00338.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Ötting",
+        "RecipientAlt": "NA",
+        "Year": 876,
+        "PlaceRedacted": "Mattighofen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.80431,
+          48.87314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 3,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00339.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Kremsmünster",
+        "RecipientAlt": "NA",
+        "Year": 877,
+        "PlaceRedacted": "Ranshofen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.13148,
+          48.05372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 4,
+        "URL": "https://www.dmgh.de/de/fs1/object/goToPage/bsb00000362.html?pageNo=289&sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Casauria",
+        "RecipientAlt": "NA",
+        "Year": 877,
+        "PlaceRedacted": "Pavia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.91456,
+          42.21487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 5,
+        "URL": "https://www.dmgh.de/de/fs1/object/goToPage/bsb00000362.html?pageNo=291&sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Piacenza",
+        "RecipientAlt": "NA",
+        "Year": 877,
+        "PlaceRedacted": "Cassano d’Adda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 6,
+        "URL": "https://www.dmgh.de/de/fs1/object/goToPage/bsb00000362.html?pageNo=292&sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Bobbio",
+        "RecipientAlt": "NA",
+        "Year": 877,
+        "PlaceRedacted": "Cortenuova"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.38641,
+          44.771568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 7,
+        "URL": "https://www.dmgh.de/de/fs1/object/goToPage/bsb00000362.html?pageNo=294&sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Novara",
+        "RecipientAlt": "NA",
+        "Year": 877,
+        "PlaceRedacted": "Peschiera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.61839,
+          45.445099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 8,
+        "URL": "https://www.dmgh.de/de/fs1/object/goToPage/bsb00000362.html?pageNo=296&sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Nonantola",
+        "RecipientAlt": "NA",
+        "Year": 877,
+        "PlaceRedacted": "Peschiera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.03555,
+          44.676601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 9,
+        "URL": "https://www.dmgh.de/de/fs1/object/goToPage/bsb00000362.html?pageNo=297&sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "St. Mary",
+        "RecipientAlt": "Pavia",
+        "Year": 877,
+        "PlaceRedacted": "Verona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.15656,
+          45.18589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 10,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00351.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Lucca",
+        "RecipientAlt": "NA",
+        "Year": 877,
+        "PlaceRedacted": "Verona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.495061,
+          43.83762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 11,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00352.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Kremsmünster",
+        "RecipientAlt": "NA",
+        "Year": 877,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.13148,
+          48.05372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 12,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00353.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Cremona",
+        "RecipientAlt": "NA",
+        "Year": 878,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.022651,
+          45.133247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 13,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00354.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Mulinellis",
+        "RecipientAlt": "(Mantua)",
+        "Year": 878,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7977,
+          45.16037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 14,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00356.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Ötting",
+        "RecipientAlt": "NA",
+        "Year": 878,
+        "PlaceRedacted": "Ranshofen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.80431,
+          48.87314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 15,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00357.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "St. Emmeram",
+        "RecipientAlt": "NA",
+        "Year": 878,
+        "PlaceRedacted": "Hochburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.101624,
+          49.013432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 16,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00358.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Piacenza",
+        "RecipientAlt": "NA",
+        "Year": 878,
+        "PlaceRedacted": "Hochburg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 17,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00360.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "St. Zeno",
+        "RecipientAlt": "Verona",
+        "Year": 878,
+        "PlaceRedacted": "St. Zeno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.993313,
+          45.438618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 19,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00363.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Kremsmünster",
+        "RecipientAlt": "NA",
+        "Year": 879,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.13148,
+          48.05372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 20,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00364.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Mondsee",
+        "RecipientAlt": "NA",
+        "Year": 879,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3502,
+          47.855389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 21,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00366.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "St. Cristina",
+        "RecipientAlt": "Corteolona",
+        "Year": 879,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.37048,
+          45.158932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 22,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00368.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Aquileia ",
+        "RecipientAlt": "NA",
+        "Year": 879,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.36463,
+          45.7683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 24,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00372.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Parma",
+        "RecipientAlt": "NA",
+        "Year": "879?",
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.327904,
+          44.801483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 26,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00375.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "St. Salvatore",
+        "RecipientAlt": "Brescia",
+        "Year": 879,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.211802,
+          45.541553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 27,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00377.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Piacenza",
+        "RecipientAlt": "NA",
+        "Year": 879,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.692984,
+          45.05262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "MGH": 28,
+        "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00378.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
+        "Recipient": "Nonantola",
+        "RecipientAlt": "NA",
+        "Year": 879,
+        "PlaceRedacted": "Ötting"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.03555,
+          44.676601
+        ]
+      }
+    }
+  ]
+};
 var LYJSON;
 var CFJSON = {
   "type": "FeatureCollection",

@@ -94,13 +94,14 @@ basemap6.addTo(map); //Adds the basemap to the map
           + "<br>" + "Place Redacted: Not Specified"
           + "<br>" + "MGH #: " + feature.properties.MGH).openPopup();
         }
-        else if(feature.properties.MGH != null)
+        else if(feature.properties.MGH != null && feature.properties.URL != null)
         {
            layer.bindPopup("King: " + king 
           + "<br>" + "Recipient: " + feature.properties.Recipient 
           + "<br>" + "Year: " + feature.properties.Year 
           + "<br>" + "MGH #: " + feature.properties.MGH 
-          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
+          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted
+          + "<br>" + '<a href=' + feature.properties.url + '>MGH</a>').openPopup();
         }
         else
         {
@@ -126,6 +127,7 @@ basemap6.addTo(map); //Adds the basemap to the map
     var ARecipients = createNewLayer(AJSON,AIcon, "Arnulf");
     var LGRecipients = createNewLayer(LGJSON, LGIcon, "Louis the German"); 
     var CFRecipients = createNewLayer(CFJSON, CFIcon, "Charles the Fat"); 
+    var CaRecipients = createNewLayer(CaJSON, CaIcon, "Carloman")
     
     //These need data and will be uncommented then
     /*var CaRecipients = createNewLayer(CaJSON, CaIcon, "Carloman");  
@@ -146,6 +148,7 @@ basemap6.addTo(map); //Adds the basemap to the map
 	var LGGroup = L.featureGroup.subGroup(parentGroup);
 	var ArnulfGroup = L.featureGroup.subGroup(parentGroup);
   	var CFGroup = L.featureGroup.subGroup(parentGroup);
+  	var CaGroup = L.featureGroup.subGroup(parentGroup);
 	
 	/*These will be uncommented when I have the data
 	var CaGroup = L.featureGroup.subGroup(parentGroup);
@@ -156,6 +159,7 @@ basemap6.addTo(map); //Adds the basemap to the map
 	LGRecipients.addTo(LGGroup);
 	ARecipients.addTo(ArnulfGroup);
   	CFRecipients.addTo(CFGroup);
+  	CaRecipients.addTo(CaGroup);
 
 	//Add the parent group and then initialize Louis the German as the first subgroup.
 	parentGroup.addTo(map);
@@ -175,8 +179,8 @@ var baseLayers = {
 var overlays = {
 
   	"Louis the German (827-876)": LGGroup,
-    /*"Louis the Younger (876-882)": LYGroup,
-    "Carloman (876-880)": CaGroup,*/
+    //"Louis the Younger (876-882)": LYGroup,
+    "Carloman (876-880)": CaGroup,
     "Charles the Fat (876-887)": CFGroup,
     "Arnulf of Carinthia (887-899)": ArnulfGroup,
 
