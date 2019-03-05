@@ -1449,7 +1449,7 @@ var CaJSON = {
         "MGH": 15,
         "URL": "https://www.dmgh.de/de/fs1/object/display/bsb00000362_00357.html?sortIndex=030%3A030%3A0001%3A010%3A00%3A00",
         "Recipient": "St. Emmeram",
-        "RecipientAlt": "NA",
+        "RecipientAlt": "Regensburg",
         "Year": 878,
         "PlaceRedacted": "Hochburg"
       },

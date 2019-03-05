@@ -85,8 +85,18 @@ basemap6.addTo(map); //Adds the basemap to the map
     var leafletLayer = L.geoJson(GeoJSON, {
       onEachFeature: function (feature, layer){
         layer.setIcon(icon);
+        
+       	if(feature.properties.RecipientAlt != "NA")
+       	{
+       		layer.bindPopup("King: " + king 
+          + "<br>" + "Recipient: " + feature.properties.Recipient 
+          + " in " + feature.properties.RecipientAlt
+          + "<br>" + "Year: " + feature.properties.Year 
+          + "<br>" + "MGH #: " + feature.properties.MGH 
+          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
 
-        if(feature.properties.PlaceRedacted == "NA" && feature.properties.MGH != null)
+       	}
+		else if(feature.properties.PlaceRedacted == "NA" && feature.properties.MGH != null)
         {
           layer.bindPopup("King: " + king 
           + "<br>" + "Recipient: " + feature.properties.Recipient 
@@ -94,14 +104,13 @@ basemap6.addTo(map); //Adds the basemap to the map
           + "<br>" + "Place Redacted: Not Specified"
           + "<br>" + "MGH #: " + feature.properties.MGH).openPopup();
         }
-        else if(feature.properties.MGH != null && feature.properties.URL != null)
+        else if(feature.properties.MGH != null)
         {
            layer.bindPopup("King: " + king 
           + "<br>" + "Recipient: " + feature.properties.Recipient 
           + "<br>" + "Year: " + feature.properties.Year 
           + "<br>" + "MGH #: " + feature.properties.MGH 
-          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted
-          + "<br>" + '<a href=' + feature.properties.url + '>MGH</a>').openPopup();
+          + "<br>" + "Place Redacted: " + feature.properties.PlaceRedacted).openPopup();
         }
         else
         {
@@ -128,10 +137,8 @@ basemap6.addTo(map); //Adds the basemap to the map
     var LGRecipients = createNewLayer(LGJSON, LGIcon, "Louis the German"); 
     var CFRecipients = createNewLayer(CFJSON, CFIcon, "Charles the Fat"); 
     var CaRecipients = createNewLayer(CaJSON, CaIcon, "Carloman")
-    
-    //These need data and will be uncommented then
-    /*var CaRecipients = createNewLayer(CaJSON, CaIcon, "Carloman");  
-  	var LYRecipients= createNewLayer(LYJSON, LYIcon, "Louis the Younger");*/
+    //var LYRecipients= createNewLayer(LYJSON, LYIcon, "Louis the Younger");
+   
 
   //This is the layer control code, it creates two types: base layers (which don't matter at the moment) and overlays (the different recipient groupings)
   //This uses two plugins: Leaflet.MarkerCluster and Leaflet.FeatureGroup.Subgroup
@@ -149,17 +156,16 @@ basemap6.addTo(map); //Adds the basemap to the map
 	var ArnulfGroup = L.featureGroup.subGroup(parentGroup);
   	var CFGroup = L.featureGroup.subGroup(parentGroup);
   	var CaGroup = L.featureGroup.subGroup(parentGroup);
+  	//var LYGroup = L.featureGroup.subGroup(parentGroup);
 	
-	/*These will be uncommented when I have the data
-	var CaGroup = L.featureGroup.subGroup(parentGroup);
-	var CFGroup = L.featureGroup.subGroup(parentGroup);
-	var LYGroup = L.featureGroup.subGroup(parentGroup);*/
+
 	
 	//Add the layers to the subgroups
 	LGRecipients.addTo(LGGroup);
 	ARecipients.addTo(ArnulfGroup);
   	CFRecipients.addTo(CFGroup);
   	CaRecipients.addTo(CaGroup);
+  	//LYRecipients.addTo(LYGroup);
 
 	//Add the parent group and then initialize Louis the German as the first subgroup.
 	parentGroup.addTo(map);
